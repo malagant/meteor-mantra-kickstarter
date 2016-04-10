@@ -1,5 +1,5 @@
 export default {
 
-  name: 'kickstarter'
+  name: 'paratrain'
 
 };
