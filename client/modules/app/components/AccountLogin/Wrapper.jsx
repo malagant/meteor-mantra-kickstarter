@@ -12,10 +12,9 @@ export default class extends React.Component {
           <div className="row">
 
               <div className="col-md-6">
-                  <h2 className="font-bold">Welcome</h2>
+                  <h2 className="font-bold">Willkommen</h2>
 
-                  <p>Ut laoreet tempor turpis non malesuada.
-                    Nam convallis volutpat massa ac ullamcorper.
+                  <p>Wenn Du Dich einloggst, kannst Du personalisiert für die A-Lizenz üben. Der Zugang ist kostenlos.
                   </p>
 
 
@@ -25,22 +24,20 @@ export default class extends React.Component {
 
                     <h2 className="font-bold">Login</h2>
                     <p>
-                        Enter your email address and your password.
+                        Gib Deine Emailadresse und Dein Passwort ein.
                     </p>
 
 
                     <ComponentCtx />
 
                     <a href="/password">
-                        <small>Forgot password?</small>
+                        <small>Passwort vergessen?</small>
                     </a>
 
                     <p className="text-muted text-center">
-                        <small>Do not have an account?</small>
+                        <small>Noch keine Logindaten?</small>
                     </p>
-                    <a className="btn btn-sm btn-white btn-block" href="/register">Create an account</a>
-
-
+                    <a className="btn btn-sm btn-block" href="/register">Benutzerkonto erstellen</a>
                   </div>
               </div>
           </div>

@@ -8,27 +8,13 @@ export default class extends React.Component {
       userId
     } = this.props;
 
-    var links2 = [];
-    links2.push({url: '/colors', name: '/colors'} );
-    links2.push({url: '/colors/add', name: '/colors/add'} );
-    let navColors = React.createElement(DropDown, {name: 'Colors', links: links2});
+    var links = [];
+    links.push({url: '/questions/flugpraxis', name: 'Flugpraxis'} );
+    links.push({url: '/questions/technik', name: 'Technik'} );
+    links.push({url: '/questions/luftrecht', name: 'Luftrecht'} );
+    links.push({url: '/questions/meteorologie', name: 'Meteorologie'} );
 
-    var links4 = [];
-    links4.push({url: '/admin', name: '/admin'} );
-    links4.push({url: '/users', name: '/users'} );
-    links4.push({url: '/users/add', name: '/users/add'} );
-    let navAdmin = React.createElement(DropDown, {name: 'Admin', links: links4});
-
-    var links5 = [];
-    links5.push({url: '/login', name: 'Login'} );
-    links5.push({url: '/password', name: 'Forgot passoword'} );
-    links5.push({url: '/register', name: 'Register'} );
-    links5.push({url: '/Logout', name: 'Logout'} );
-
-    links5.push({url: '/account', name: 'Account'} );
-    links5.push({url: '/profile', name: 'Profile'} );
-
-    let navAccounts = React.createElement(DropDown, {name: 'Accounts', links: links5});
+    let navAdmin = React.createElement(DropDown, {name: 'Fragenkataloge', links: links});
 
     return (
       <ul className="nav navbar-nav">
@@ -36,17 +22,7 @@ export default class extends React.Component {
         <li className="">
           <a aria-expanded="false" role="button" href="/" target="">Start</a>
         </li>
-
-        <li className="">
-          <a aria-expanded="false" role="button" href="/blog" target="">Blog</a>
-        </li>
-
-        { navColors }
-
-        { navAccounts }
-
         { userId ? navAdmin : null }
-
       </ul>
     );
   }

@@ -4,7 +4,7 @@ export default {
   login({Meteor, LocalState, FlowRouter, Accounts}, email, password) {
 
     if (!email || !password) {
-      return LocalState.set('LOGIN_ERROR', 'Login & Password are required!');
+      return LocalState.set('LOGIN_ERROR', 'Login & Passwort werden benötigt!');
     }
 
     LocalState.set('LOGIN_ERROR', null);
@@ -25,11 +25,11 @@ export default {
   register({Meteor, LocalState, FlowRouter, Accounts}, email, password1, password2) {
 
     if (!email || !password1 || !password2) {
-      return LocalState.set('REGISTER_ERROR', 'Please fill out all the required fileds!');
+      return LocalState.set('REGISTER_ERROR', 'Bitte alle Felder ausfüllen!');
     }
 
     if (password1 !== password2 ) {
-      return LocalState.set('REGISTER_ERROR', 'Passwords do not match!');
+      return LocalState.set('REGISTER_ERROR', 'Die Passwörter sind nicht identisch!');
     }
 
     Accounts.createUser({email, password: password1}, (err) => {

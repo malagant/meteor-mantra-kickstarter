@@ -6,7 +6,7 @@ import coreModule from './modules/core';
 
 import appModule from './modules/app';
 import adminModule from './modules/admin';
-import colorsModule from './modules/colors';
+import questionsModule from './modules/questions';
 
 // init context
 const context = initContext();
@@ -17,6 +17,6 @@ app.loadModule(coreModule);
 
 app.loadModule(appModule);
 app.loadModule(adminModule);
-app.loadModule(colorsModule);
+app.loadModule(questionsModule);
 
 app.init();

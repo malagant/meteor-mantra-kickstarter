@@ -83,24 +83,24 @@ export default React.createClass({
                 value=""
                 label="Email"
                 type="email"
-                placeholder="This is an email input."
+                placeholder="Deine Emailadresse"
 
                 autoComplete="off"
 
                 validations="isEmail"
-                validationError="Please provide a valid email address."
+                validationError="Bitte gib eine gültige Emailadresse an."
 
             />
             <Input
                 {...sharedProps}
                 name="password"
                 value=""
-                label="Password"
+                label="Passwort"
                 type="password"
-                placeholder="Type in your password"
+                placeholder="Dein Passwort"
 
                 validations="minLength:4"
-                validationError="That password looks a bit short, try again"
+                validationError="Das Passwort scheint etwas kurz."
 
             />
 

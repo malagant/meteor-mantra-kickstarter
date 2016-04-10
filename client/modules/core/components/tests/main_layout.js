@@ -10,7 +10,7 @@ describe('core.components.main_layout', () => {
     expect(el.contains(<Navigation />)).to.be.equal(true);
   });
 
-  it('should render childrens', () => {
+  it('should render children', () => {
     const Comp = () => (<p>Hello</p>);
     const el = shallow(
       <MainLayout content={() => (<Comp />)}/>

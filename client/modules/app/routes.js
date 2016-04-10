@@ -23,7 +23,7 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'app.home',
     action() {
       mount(AuthCheckCtx, {
-        LayoutDefault, content: () => (<Simplest title="App main screen"/>)
+        LayoutDefault, content: () => (<Simplest title="Willkommen bei ParaTrain" content="Hier kannst Du Dich auf die Prüfung vorbereiten."/>)
       });
     }
   });

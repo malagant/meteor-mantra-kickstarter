@@ -22,7 +22,7 @@ export default React.createClass({
 
             <div className="navbar-header">
               <button type="button" className="navbar-toggle"
-                data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                      data-toggle="collapse" data-target=".navbar-inverse-collapse">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
